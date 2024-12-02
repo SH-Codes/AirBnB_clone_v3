@@ -1,137 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>8-Index.html</title>
-        <link rel="stylesheet" href="styles/4-common.css">
-        <link rel="stylesheet" href="styles/3-header.css">
-        <link rel="stylesheet" href="styles/6-filters.css">
+  <head>
+	<!-- HEAD -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Holberton AirBnB</title>
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="images/icon.png">
+
+	<!-- ********************** CSS styles -->
+	<link rel="stylesheet" href="styles/4-common.css">
+	<link rel="stylesheet" href="styles/3-header.css">
+	<link rel="stylesheet" href="styles/3-footer.css">
+	<link rel="stylesheet" href="styles/6-filters.css">
 	<link rel="stylesheet" href="styles/8-places.css">
-        <link rel="stylesheet" href="styles/3-footer.css">
-</head>
-<body>
-        <header>
-        </header>
-        <div class="container">
-                  <section class="filters">
-                        <div class="locations">
-                                <h3>States</h3>
-                                <h4>California, Arizona</h4>
-                                <ul class="popover">
-                                        <li class="strong">Arizona:</li>
-                                        <li>Page</li>
-                                        <li>Page 2</li>
-                                        <li class="strong">California:</li>
-                                        <li>San Francisco</li>
-                                        <li>Los Altos</li>
-                                </ul>
-                        </div>
-                        <div class="amenities">
-                                <h3>Amenities</h3>
-                                <h4>Internet, Kitchens</h4>
-                                <ul class="popover1">
-                                        <li>Internet</li>
-                                        <li>TV</li>
-                                        <li>Kitchen</li>
-                                        <li>Iron</li>
-                                </ul>
-                        </div>
-                        <button>Search</button>
-                </section>
-        </div>
-	<section class="places">
-		<h1>Places</h1>
-                <article>
-                        <h2>My home</h2>
-                        <div class="price_by_night">
-                                <h4>$80</h4>
-                        </div>
-                        <div class="information">
-                                <div class="icon_wrapper">
-                                <div class="max_guest"></div>
-                                <div class="number_rooms"></div>
-                                <div class="number_bathrooms"></div>
-                                </div>
-                                <div class="user_wrapper">
-                                <div class="user"><p>2 Guests</p></div>
-                                <div class="user"><p>1 Bedrooms</p></div>
-                                <div class="user"><p>1 Bathroom</p></div>
-                                </div>
-                                <div class="description">
-                                        <p><strong>Owner: </strong>John Lennon <br><br>This is a lovely 1 bedroom and bathroom 
-                                                apartment that can accomodate 2 people. It locates at the center of Shanghai<br>
-                                                and next to subwayline 1. 1 stop to people Square, 2 stops<br>
-                                                to Bund, 3 stops to Jingan Temple.
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                        </p>
-                                </div>
-                        </div>
-  
-                </article>
-                <article>
-                        <h2>Tiny house</h2>
-                        <div class="price_by_night">
-                                <h4>$65</h4>
-                        </div>
-                        <div class="information">
-                                <div class=icon_wrapper>
-                                <div class="max_guest"></div>
-                                <div class="number_rooms"></div>
-                                <div class="number_bathrooms"></div>
-                                </div>
-                                <div class="user_wrapper">
-                                <div class="user"><p>4 Guests</p></div>
-                                <div class="user"><p>2 Bedrooms</p></div>
-                                <div class="user"><p>1 Bathroom</p></div>
-                                </div>
-                                <div class="description">
-                                        <p><strong>Owner: </strong>Adrianne <br><br>Our place is a private, affordable stand-alone guest house<br>
-                                                centrally located just minutes to French Quarters, downtown.<br>
-                                                the Fair Grounds (jazz Fest) and Cit Park. The guest house is<br>
-                                                a quaint, 400 square ft. with a full bath, mini kitchen & a living<br>
-                                                room. The extra high ceilings make the home feel more<br>
-                                                spacious. The sofa converts to a bed also. We have a hand <br>
-                                                made counter area that adds character to the room and a <br>
-                                                great porch/deck to relax on and have a glass or Merlot.
-                                        </p>
-                                </div>
-                        </div>
-                </article>
-                <article class="suite">
-                        <h2>A suite</h2>
-                        <div class="price_by_night">
-                                <h4>$190</h4>
-                        </div>
-                        <div class="information">
-                                <div class="max_guest"></div>
-                                <div class="number_rooms"></div>
-                                <div class="number_bathrooms"></div>
-                                <div>
-                                <div class="user"><p>2 Guests</p></div>
-                                <div class="user"><p>2 Bedrooms</p></div>
-                                <div class="user"><p>1 Bathroom</p></div>
-                                </div>
-                                <div class="description">
-                                        <p><strong>Owner: </strong>Adrianne <br><br>Our place is a private, affordable stand-alone guest house<br>
-                                                centrally located just minutes to French Quarters, downtown.<br>
-                                                the Fair Grounds (jazz Fest) and Cit Park. The guest house is<br>
-                                                a quaint, 400 square ft. with a full bath, mini kitchen & a living<br>
-                                                room. The extra high ceilings make the home feel more<br>
-                                                spacious. The sofa converts to a bed also. We have a hand <br>
-                                                made counter area that adds character to the room and a <br>
-                                                great porch/deck to relax on and have a glass or Merlot.
-                                        </p>
-                                </div>
-                        </div>
-                </article>
-        </section>
-        <footer>
-                <p>Best School</p>
-        </footer>
-</body>
+
+	<!-- ********************** Font Awesome -->
+	<link rel="stylesheet" href="/styles/font-awesome.css">
+  </head>
+  <!-- ********************** BODY -->
+  <body>
+	<!-- ********************** HEADER -->
+	<header>
+	</header>
+	<main>
+	  <div class="container">
+		<!-- ********************** FILTERS -->
+		<section class="filters">
+		  <!-- ********************** LOCATIONS -->
+		  <div class="locations">
+			<h3>States</h3>
+			<h4>Lorem ipsum dolor</h4>
+			<ul class="popover">
+			  <li><h2>California</h2>
+				<ul>
+				  <li>Pacifica</li>
+				  <li>San Diego</li>
+				</ul>
+			  </li>
+			  <li><h2>Illinois</h2>
+				<ul>
+				  <li>Chicago</li>
+				  <li>Winnetka</li>
+				</ul>
+			  </li>
+			</ul>
+		  </div>
+		  <!-- ********************** AMENITIES -->
+		  <div class="amenities">
+			<h3>Amenities</h3>
+			<h4>adipiscing elit</h4>
+			<ul class="popover">
+			  <li>Pool</li>
+			  <li>Wifi</li>
+			  <li>Breakfast</li>
+			  <li>Garage</li>
+			</ul>
+		  </div>
+		  <!-- ********************** SEARCH BUTTON -->
+		  <button>Search</button>
+		</section>
+		<!-- ********************** PLACES -->
+		<section class="places">
+		  <h1>Places</h1>
+		  <article>
+			<!-- ********************** place: flatland
+			  -->
+			<div class="title">
+			  <h2>Flatland</h2>
+			  <div class="price_by_night">
+				$80
+			  </div>
+			</div>
+			<div class="information">
+			  <div class="max_guest">
+				<i class="fa fa-users fa-3x" aria-hidden="true"></i>
+				<br />
+				5 Guests
+			  </div>
+			  <div class="number_rooms">
+				<i class="fa fa-bed fa-3x" aria-hidden="true"></i>
+				<br />
+				4 Bedrooms
+			  </div>
+			  <div class="number_bathrooms">
+				<i class="fa fa-bath fa-3x" aria-hidden="true"></i>
+				<br />
+				1 Bathroom
+			  </div>
+			</div>
+			<!-- ********************** USER
+			  -->
+			<div class="user">
+			  <strong>Owner:</strong>
+			</div>
+			<div class="description">
+			  I wandered lonely as a cloud That floats on high o'er vales and
+			  hills, When all at once I saw a crowd, A host, of golden
+			  daffodils; Beside the lake, beneath the trees, Fluttering and
+			  dancing in the breeze.
+			</div>
+		  </article>
+		  <article>
+			<!-- ********************** place: closet
+			  -->
+			<div class="title">
+			  <h2>Closet</h2>
+			  <div class="price_by_night">
+				$7
+			  </div>
+			</div>
+			<div class="information">
+			  <div class="max_guest">
+				<i class="fa fa-users fa-3x" aria-hidden="true"></i>
+				<br />
+				2 Guests
+			  </div>
+			  <div class="number_rooms">
+				<i class="fa fa-bed fa-3x" aria-hidden="true"></i>
+				<br />
+				2 Bedrooms
+			  </div>
+			  <div class="number_bathrooms">
+				<i class="fa fa-bath fa-3x" aria-hidden="true"></i>
+				<br />
+				1 Bathroom
+			  </div>
+			</div>
+			<!-- ********************** user
+			  -->
+			<div class="user">
+			  <strong>Owner:</strong>
+			</div>
+			<div class="description">
+			  Continuous as the stars that shine And twinkle on the milky way,
+			  They stretched in never-ending line Along the margin of a bay:
+			  Ten thousand saw I at a glance, Tossing their heads in sprightly
+			  dance.
+			</div>
+		  </article>
+		  <article>
+			<!-- ********************** place: big home
+			  -->
+			<div class="title">
+			  <h2>Big Home</h2>
+			  <div class="price_by_night">
+				$99
+			  </div>
+			</div>
+			<div class="information">
+			  <div class="max_guest">
+				<i class="fa fa-users fa-3x" aria-hidden="true"></i>
+				<br />
+				20 Guests
+			  </div>
+			  <div class="number_rooms">
+				<i class="fa fa-bed fa-3x" aria-hidden="true"></i>
+				<br />
+				4 Bedrooms
+			  </div>
+			  <div class="number_bathrooms">
+				<i class="fa fa-bath fa-3x" aria-hidden="true"></i>
+				<br />
+				1 Bathroom
+			  </div>
+			</div>
+			<!-- ********************** user
+			  -->
+			<div class="user">
+			  <strong>Owner:</strong>
+			</div>
+			<div class="description">
+			  The waves beside them danced; but they Out-did the sparkling
+			  waves in glee: A poet could not but be gay, In such a jocund
+			  company: I gazed—and gazed—but little thought What wealth the
+			  show to me had brought: For oft, when on my couch I lie In vacant
+			  or in pensive mood, They flash upon that inward eye Which is the
+			  bliss of solitude; And then my heart with pleasure fills, And
+			  dances with the daffodils.
+			</div>
+		  </article>
+		</section>
+	  </div>
+	</main>
+	<!-- FOOTER -->
+	<footer>
+	  Holberton School
+	</footer>
+  </body>
 </html>

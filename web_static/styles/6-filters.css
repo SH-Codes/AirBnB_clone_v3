@@ -1,111 +1,119 @@
-.filters {
-    width: 100%;
-    height: 70px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    margin-left: -25px;
-    display: flex;
+@charset "UTF-8";
+/** Holberton Practice Styles
+ * ------ Filters
+ */
+
+.container .filters {
+	height: 70px;
+	background-color: #FFFFFF;
+	width: 100%;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+	z-index: 2;
+	position: relative;
 }
 
-button {
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #ff5a5f;
-    height: 48px;
-    width: 20%;
-    border: none;
-    border-radius: 4px;
-    margin-top: 10px;
-    margin-left: 230px;
-    margin-right: 10px;
-    border-right: 30px;
-    cursor: pointer;
-    float: right;
+.container .filters .locations {
+	width: 25%;
+	border-right: 1px solid #DDDDDD;
 }
 
-button:hover{
-    opacity: 90%;
+.container .filters .amenities {
+	width: 25%;
 }
 
-.locations {
-    height: 100%;
-    width: 25%;
-    border-right: 1px solid #dddddd;
-    position: relative;
+.container .filters button {
+	font-size: 18px;
+	background-color: #FF5A5F;
+	height: 48px;
+	width: 20%;
+	border: none;
+	border-radius: 4px;
+	margin: auto 30px auto auto;
 }
 
-.amenities {
-    height: 100%;
-    width: 25%;
-    position: relative;
+.container .filters button:hover {
+	opacity: 0.9;
 }
 
-h3 {
-    font-weight: 600;
+/**
+ * ------ HEADERS
+ */
+
+.container .filters h2 {
+	font-size: 16px;
+	margin: 10px 0 5px 0;
 }
 
-h4 {
-    font-weight: 400;
-    margin-top: -12px;
+.container .filters h3 {
+	font-weight: 600;
+	margin: 12px 0 4px 40px;
 }
 
-section div {
-    display: inline-block;
-    margin-top: 1px;
-    margin-left: 30px;
+.container .filters h4 {
+	font-weight: 400;
+	font-size: 14px;
+	margin: 7px 0 3px 40px;
 }
 
-div ul.popover {
-    width: 96%;
-    height: 220px;
-    text-decoration: none;
-    background-color: #ececec;
-    margin-left: -30px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    margin-top: -5px;
-    display: none;
-} 
+/**
+ * ------ POPOVER
+ */
 
-div ul.popover1 {
-    width: 60%;
-    text-decoration: none;
-    background-color: #ececec;
-    margin-left: -30px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    margin-top: -5px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    position: absolute;
-    display: none;
-} 
-
-div.locations:hover ul.popover,
-div.amenities:hover ul.popover1 {
-    display: block;
+.container .filters .locations:hover .popover {
+	display: list-item;
 }
 
-div ul.popover li {
-    text-decoration: none;
-    display: block;
-    list-style-type: none;
+.container .filters .amenities:hover .popover {
+	display: list-item;
 }
 
-div ul.popover1 li {
-    text-decoration: none;
-    display: block
+.container .filters .popover {
+	display: none;
+	list-style-type: none;
+	background-color: #FAFAFA;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+	padding: 30px 40px 40px 30px;
+	margin: 15px -1px 0 -1px;
 }
 
-li.strong{
-    font-size: 18px;
-    font-weight: 600;
-    margin-left: -20px;
-    padding-top: 30px;
+.container .filters .popover ul {
+	list-style-type: none;
+	padding-left: 20px;
 }
 
-ul.popover li:hover {
-    display: block;
-    transition-duration: 2s;
-    visibility: visible;
+.container .filters .popover li {
+	margin: 5px 0 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+
+	.container .filters {
+		flex-direction: column;
+		height: auto;
+		width: 90%;
+		margin: auto;
+	}
+
+	.container .filters .locations {
+		border-bottom: 1px solid #DDDDDD;
+	}
+
+	.container .filters .locations,
+	.container .filters .amenities {
+		width: 100%;
+		border-right: none;
+		border-bottom: 1px solid #DDDDDD;
+	}
+
+	.container .filters button {
+		width: 80%;
+		margin: 5px auto;
+	}
+
 }
